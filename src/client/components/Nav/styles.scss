@@ -1,0 +1,6 @@
+.nav-link {
+  list-style-type: none;
+  &.nav-link-active {
+    font-weight: 600;
+  }
+}

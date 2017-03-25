@@ -6,7 +6,8 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Projects from './Projects';
-import Nav from './Nav';
+import Nav from './Nav/index';
+import '../styles/base.scss'
 
 class App extends Component {
   renderMainContent = () => {
@@ -27,12 +28,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav />
         <main>
           <div>
             { this.renderMainContent() }
           </div>
         </main>
+        <Nav />
         <Footer />
       </div>
     );
