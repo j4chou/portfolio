@@ -1,6 +1,14 @@
+@import './variables.scss';
+
 @font-face {
   font-family: 'Work Sans';
   src: url('./fonts/WorkSans-Regular.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans Thin';
+  src: url('./fonts/WorkSans-Thin.ttf');
   font-style: normal;
 }
 
@@ -10,6 +18,7 @@ html {
 }
 
 body {
+  font-family: $body-font;
   margin: 0;
   height: 100%;
   width: 100%;
