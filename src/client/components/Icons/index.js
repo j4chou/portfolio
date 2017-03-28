@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router';
 import './styles.scss';
+import github from './../../../../public/assets/github.png';
+import linkedin from './../../../../public/assets/linkedin.png';
 
 const Icons = () => {
   const links = [
     { name: 'github',
       path: 'http://github.com/j4chou', 
-      src: '/public/assets/github.png'
+      src: github
      },
     { name: 'linkedin',
       path: 'http://www.linkedin.com/in/jessicachou1/', 
-      src: '/public/assets/linkedin.png' 
+      src: linkedin
     }
   ];
 
