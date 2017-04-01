@@ -1,6 +1,17 @@
+@import '../../styles/variables.scss';
+
 .nav-link {
+  font-size: 24px;
   list-style-type: none;
-  &.nav-link-active {
-    font-weight: 600;
+
+  > a {
+    font-family: $link-font;
+    text-decoration: none;
+    text-transform: lowercase;
   }
+}
+
+.nav-link-active > a {
+  // text-transform: lowercase;
+  font-family: $link-font-active;
 }

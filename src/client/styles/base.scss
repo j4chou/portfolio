@@ -7,8 +7,20 @@
 }
 
 @font-face {
-  font-family: 'Work Sans Thin';
-  src: url('./fonts/WorkSans-Thin.ttf');
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Regular.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url('./fonts/Lato-Light.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url('./fonts/Lato-Bold.ttf');
   font-style: normal;
 }
 
@@ -18,7 +30,7 @@ html {
 }
 
 body {
-  font-family: $body-font;
+  // font-family: $body-font;
   margin: 0;
   height: 100%;
   width: 100%;

@@ -21,14 +21,13 @@ class App extends Component {
         return <Contact />;
       case '/projects':
         return <Projects />;
-      default: 
-        return <Home />;
     }
   }
   render() {
     return (
       <div className="App">
         <main>
+        <Home />
           <div>
             { this.renderMainContent() }
           </div>
