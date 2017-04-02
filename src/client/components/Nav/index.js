@@ -16,8 +16,8 @@ const Nav = () => {
         links.map( link => {
           const path = window.location.pathname.toLowerCase();
           let linkClass = 'nav-link';
-
           if (path.includes(link.path)) linkClass += ' nav-link-active';
+
           return (
             <li className={linkClass} key={link.text}>
               <Link to={link.path}>{link.text}</Link>

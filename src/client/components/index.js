@@ -11,19 +11,27 @@ import './../styles/base.scss';
 import './../styles/app.scss';
 
 class App extends Component {
+
   renderMainContent = () => {
     const pathname = this.props.location.pathname.toLowerCase();
 
     switch (pathname) {
       case '/contact':
-        return <Contact />;
+        this.scrollToBottom();
       case '/projects':
         return <Projects />;
       default:
         return <About />;
     }
   }
+
+  scrollToBottom = () => {
+    const main = document.getElementById('root');
+    document.body.scrollTop = main.scrollHeight;
+  }
+
   render() {
+    console.log(this.props);
     return (
       <div className="App">
         <Home />
@@ -32,8 +40,9 @@ class App extends Component {
           <div className="main-content">
             { this.renderMainContent() }
           </div>
+          <Contact />
+          <Footer />
         </main>
-        <Footer />
       </div>
     );
   }

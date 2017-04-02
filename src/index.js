@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './client/components/index';
 
-import { Route, IndexRoute, Router, browserHistory } from 'react-router';
+import { Router, browserHistory } from 'react-router';
 import routes from './router/router';
 
 ReactDOM.render(
