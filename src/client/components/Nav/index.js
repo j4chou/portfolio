@@ -5,8 +5,8 @@ import './styles.scss';
 const Nav = () => {
   const links = [
     { path: '/about', text: 'About' },
-    { path: '/contact', text: 'Contact' },
-    { path: '/projects', text: 'Projects' }
+    { path: '/projects', text: 'Projects' },
+    { path: '/contact', text: 'Contact' }
   ];
 
   return (

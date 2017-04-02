@@ -3,7 +3,7 @@ import { browserHistory } from 'react-router';
 
 import Footer from './Footer/index';
 import Home from './Home/index';
-import About from './About';
+import About from './About/index';
 import Contact from './Contact';
 import Projects from './Projects';
 import Nav from './Nav/index';

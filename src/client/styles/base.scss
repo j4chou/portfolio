@@ -1,5 +1,4 @@
 @import './variables.scss';
-
 @font-face {
   font-family: 'Work Sans';
   src: url('./fonts/WorkSans-Regular.ttf');
@@ -24,30 +23,29 @@
   font-style: normal;
 }
 
-html {
+html,
+#root,
+.App,
+main {
   height: 100%;
   width: 100%
 }
 
 body {
-  // font-family: $body-font;
+  font-family: $body-font;
   margin: 0;
   height: 100%;
   width: 100%;
 }
 
 .main-content {
+  background: pink;
   width: 100%;
   height: 100%;
   & .content {
-    background: pink;
     width: 100%;
     height: 100%;
-  } 
-}
-
-.footer {
-  text-align: center;
+  }
 }
 
 * {
