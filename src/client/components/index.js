@@ -26,13 +26,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <main>
         <Home />
+          <Nav />
+        <main>
           <div className="main-content">
             { this.renderMainContent() }
           </div>
         </main>
-        <Nav />
         <Footer />
       </div>
     );

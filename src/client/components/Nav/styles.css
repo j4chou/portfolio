@@ -1,1 +1,1 @@
-.navigation{float:left}.nav-link{font-size:24px;list-style-type:none}.nav-link>a{font-family:"Lato";text-decoration:none;text-transform:lowercase}.nav-link-active>a{font-family:"Lato Bold"}
+.navigation{height:24px;width:100%}.nav-link{float:left;font-size:18px;list-style-type:none;text-align:center;width:33.3%}.nav-link>a{font-family:"Lato";text-decoration:none;text-transform:lowercase}.nav-link-active>a{font-family:"Lato Bold"}
