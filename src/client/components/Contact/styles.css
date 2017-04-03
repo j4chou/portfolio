@@ -1,1 +1,1 @@
-.contact-info{height:200px;width:100%}
+.contact-info{background-color:rgba(255,255,255,0.3);height:200px;width:100%}.contact-info .contact-left{float:left;height:100%;width:40%}.contact-info .contact-left p{font-family:'Oswald Regular';font-size:2.5em;margin:0 0 0 1em;position:relative;text-transform:uppercase;top:50%;transform:translateY(-50%);width:50%}.contact-info .contact-right{float:left;height:100%;width:50%}.contact-info .info-right>p{float:right}

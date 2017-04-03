@@ -10,24 +10,13 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact-info">
-      Contact here
-            Contact here
-                  Contact here
-                        Contact here
-                              Contact here
-                                    Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
-                              Contact here
+        <div className="contact-left">
+          <p>Say Hello</p>
+        </div>
+        <div className="contact-right">
+          <p>Los Angeles, CA</p>
+          <p>j4chou@gmail.com</p>
+        </div>
       </div>
     );
   }

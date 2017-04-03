@@ -9,13 +9,13 @@
 .nav-link {
   float: left;
   font-size: 1.2em;
+  font-family: $link-font;
   list-style-type: none;
   text-align: center;
   width: 33.3%;
 
   > a {
     color: white;
-    font-family: $link-font;
     text-decoration: none;
     text-transform: lowercase;
     font-weight: $bold;
@@ -24,7 +24,6 @@
 
 .nav-link-active > a {
   text-transform: uppercase;
-  font-family: $link-font-active;
   font-size: 0.9em;
   font-weight: $bold;
 }
