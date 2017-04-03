@@ -42,6 +42,11 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('./fonts/Roboto-Regular.ttf');
+  font-style: normal;
+}
 
 html,
 #root,
@@ -53,7 +58,7 @@ main {
 
 body {
   background-image: url('./../../../public/assets/background.jpg');
-  background-attachment:fixed;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $body-font;

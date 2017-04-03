@@ -1,26 +1,30 @@
 @import '../../styles/variables.scss';
 
 .navigation {
+  background-color: rgba(0, 0, 0, 0.05);
   height: 24px;
   width: 100%;
 }
 
 .nav-link {
   float: left;
-  font-size: 18px;
+  font-size: 1.2em;
   list-style-type: none;
   text-align: center;
   width: 33.3%;
 
   > a {
+    color: white;
     font-family: $link-font;
     text-decoration: none;
     text-transform: lowercase;
+    font-weight: $bold;
   }
 }
 
 .nav-link-active > a {
   text-transform: uppercase;
   font-family: $link-font-active;
-  font-size: 15px;
+  font-size: 0.9em;
+  font-weight: $bold;
 }

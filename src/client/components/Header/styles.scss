@@ -1,13 +1,13 @@
 @import '../../styles/variables.scss';
 
 .name {
+  color: white;
   font-family: $header-font;
-  font-size: 60px;
-  font-weight: $bold;
+  font-size: 4em;
   height: 100%;
   margin-top: 1em;
   position: relative;
   text-align: center;
-  width: 100%;
   text-transform: uppercase;
+  width: 100%;
 }

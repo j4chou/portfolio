@@ -1,9 +1,11 @@
 @import '../../styles/variables.scss';
 
 .footer {
+  color: white;
   font-family: $footer-font;
   position: absolute;
   left: 0;
   right: 0;
   text-align: center;
+  text-transform: lowercase;
 }
