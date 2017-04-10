@@ -28,7 +28,7 @@ const Icons = () => {
           let linkClass = 'icon-nav-link';
           const IconComponent = IconComponents[link.name];
           return (
-            <Link to={link.path} key={link.name}>
+            <Link to={link.path} key={link.name} className={link.name}>
               <IconComponent />
             </Link>
           );

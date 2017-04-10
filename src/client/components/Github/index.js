@@ -1,12 +1,12 @@
 import React from 'react';
+import './styles.scss';
 
 const Github = () => {
   return (
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-     width="34px" height="34px" viewBox="0 0 512.000000 512.000000"
+    <svg className="github-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
+     width="34px" height="34px" viewBox="0 0 512 512"
      preserveAspectRatio="xMidYMid meet">
-      <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-      fill="#000000" stroke="none">
+      <g transform="translate(0,512) scale(0.1,-0.1)">
       <path d="M2330 5109 c-779 -74 -1473 -491 -1911 -1149 -81 -121 -211 -380
       -264 -524 -108 -293 -163 -647 -151 -961 25 -678 296 -1284 782 -1755 425
       -411 968 -658 1564 -710 1018 -89 2006 459 2481 1375 264 508 348 1076 244
