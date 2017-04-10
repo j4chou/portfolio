@@ -1,14 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Github extends Component {
-  render() {
-    return (
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-       width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
-       preserveAspectRatio="xMidYMid meet">
-      <metadata>
-      Created by potrace 1.14, written by Peter Selinger 2001-2017
-      </metadata>
+const Github = () => {
+  return (
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+     width="34px" height="34px" viewBox="0 0 512.000000 512.000000"
+     preserveAspectRatio="xMidYMid meet">
       <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
       fill="#000000" stroke="none">
       <path d="M2330 5109 c-779 -74 -1473 -491 -1911 -1149 -81 -121 -211 -380
@@ -32,9 +28,8 @@ class Github extends Component {
       -110 429 -110 705 0 228 14 352 65 555 115 455 374 863 744 1173 260 218 615
       392 940 461 236 51 529 65 755 37z"/>
       </g>
-      </svg>
-    );
-  }
+    </svg>
+  );
 }
 
 export default Github;

@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
-import './styles.scss';
-// import githubIcon from './../../../../public/assets/github.png';
-import linkedin from './../../../../public/assets/linkedin.png';
 import Github from './../Github/index';
+import Linkedin from './../Linkedin/index';
+import './styles.scss';
 
 const Icons = () => {
+
   const links = [
     { name: 'github',
       path: 'http://github.com/j4chou', 
-      src: Github
      },
     { name: 'linkedin',
       path: 'http://www.linkedin.com/in/jessicachou1/', 
-      src: linkedin
     }
   ];
+
+  const IconComponents = {
+    github: Github,
+    linkedin: Linkedin
+  }
 
   return (
     <div className="icon-navbar">
@@ -23,9 +26,10 @@ const Icons = () => {
       {
         links.map( link => {
           let linkClass = 'icon-nav-link';
+          var MyComponent = IconComponents[link.name];
           return (
             <Link to={link.path} key={link.name}>
-              <img className={linkClass} src={link.src} alt={link.name} />
+              <MyComponent />
             </Link>
           );
         })
@@ -33,6 +37,7 @@ const Icons = () => {
       </ul>
     </div>
   );
+
 }
 
 export default Icons;
