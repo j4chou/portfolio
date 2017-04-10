@@ -26,10 +26,10 @@ const Icons = () => {
       {
         links.map( link => {
           let linkClass = 'icon-nav-link';
-          var MyComponent = IconComponents[link.name];
+          const IconComponent = IconComponents[link.name];
           return (
             <Link to={link.path} key={link.name}>
-              <MyComponent />
+              <IconComponent />
             </Link>
           );
         })
