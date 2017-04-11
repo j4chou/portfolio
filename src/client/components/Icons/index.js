@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router';
 import Github from './../Github/index';
 import Linkedin from './../Linkedin/index';
@@ -8,7 +8,7 @@ const Icons = () => {
 
   const links = [
     { name: 'github',
-      path: 'http://github.com/j4chou', 
+      path: 'http://www.github.com/j4chou', 
      },
     { name: 'linkedin',
       path: 'http://www.linkedin.com/in/jessicachou1/', 
