@@ -2,31 +2,54 @@
 
 .contact-info {
   background-color: rgba(255, 255, 255, 0.3);
-  height: 200px;
+  height: 100px;
   width: 100%;
   .contact-left {
     float: left;
     height: 100%;
-    width: 40%;
-    p {
-      font-family: 'Oswald Regular';
+    width: 30%;
+    h3 {
+      font-family: $contact-font-heading;
       font-size: 2.5em;
-      margin: 0 0 0 1em;
+      letter-spacing: 0.3em;
+      margin: 0 0 0 3em;
       position: relative;
       text-transform: uppercase;
       top: 50%;
       transform: translateY(-50%);
-      width: 50%;
+      width: 100%;
     }  
   }
 
   .contact-right {
     float: left;
     height: 100%;
-    width: 50%;    
-  }
+    width: 70%;
+    .contact-body {
+      float: left;
+      height: 100%;
+      width: 60%;
+      p {
+        font-family: $body-font;
+        margin-bottom: 0;
+        margin-top: 0.7em;
+      }
+    }
+    .contact-right-subhead {
+      float: left;
+      height: 100%;
+      width: 27%;
+      h4 {
+        font-family: $contact-font-heading;
+        font-size: 2em;
+        letter-spacing: 0.1em;
+        margin: 0;
+        position: relative;
+        text-transform: uppercase;
+        top: 50%;
+        transform: translateY(-50%);
+      }
 
-  .info-right > p {
-    float: right;
+    }
   }
 }

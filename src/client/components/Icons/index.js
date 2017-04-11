@@ -21,11 +21,11 @@ const Icons = () => {
   }
 
   return (
-    <div className="icon-navbar">
+    <div className='media-navbar'>
       <ul>
       {
         links.map( link => {
-          let linkClass = 'icon-nav-link';
+          let linkClass = 'media-nav-link';
           const IconComponent = IconComponents[link.name];
           return (
             <Link to={link.path} key={link.name} className={link.name}>

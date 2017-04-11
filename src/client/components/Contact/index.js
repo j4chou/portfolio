@@ -6,13 +6,19 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-info">
-        <div className="contact-left">
-          <p>Say Hello</p>
+      <div className='contact-info'>
+        <div className='contact-left'>
+          <h3>Say Hello!</h3>
         </div>
-        <div className="contact-right">
-          <p>Los Angeles, CA</p>
-          <p>j4chou@gmail.com</p>
+        <div className='contact-right'>
+          <div className='contact-body'>
+            <p>Software Engineer based in Los Angeles, CA.</p>
+            <p>Comments, suggestions, or inquiries?</p>
+            <p>Feel welcome to contact me at j4chou@gmail.com!</p>
+          </div>
+          <div className='contact-right-subhead'>
+            <h4>Connect with Me</h4>
+          </div>
           <Icons />
         </div>
       </div>
