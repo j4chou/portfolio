@@ -18,7 +18,6 @@ class App extends Component {
     switch (pathname) {
       case '/contact':
         this.scrollToBottom();
-        break;
       case '/projects':
         return <Projects />;
       default:
