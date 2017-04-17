@@ -14,7 +14,7 @@ class Contact extends Component {
           <div className='contact-body'>
             <p>Software Engineer based in Los Angeles, CA.</p>
             <p>Comments, suggestions, or inquiries?</p>
-            <p>Feel welcome to contact me at j4chou@gmail.com!</p>
+            <p>Say hi @ j4chou@gmail.com!</p>
           </div>
           <div className='contact-right-subhead'>
             <h4>Connect with Me</h4>
