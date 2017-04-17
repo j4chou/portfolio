@@ -1,29 +1,44 @@
 @import '../../styles/variables.scss';
 
 .navigation {
-  background-color: rgba(0, 0, 0, 0.05);
-  height: 24px;
+  background-color: rgba(0, 0, 0, 0.07);
+  height: 28px;
   width: 100%;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
   float: left;
   font-size: 1.2em;
   font-family: $body-font;
+  height: 28px;
+  line-height: 28px;
   list-style-type: none;
   text-align: center;
   width: 33.3%;
-
   > a {
     color: white;
+    cursor: pointer;
     text-decoration: none;
     text-transform: lowercase;
     font-weight: $bold;
+    height: 100%;
+    width: 100%;
+    padding: 0;
   }
 }
 
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
 .nav-link-active > a {
-  text-transform: uppercase;
+  font-family: $body-font-bold;
   font-size: 0.9em;
-  font-weight: $bold;
+  text-transform: uppercase;
 }
