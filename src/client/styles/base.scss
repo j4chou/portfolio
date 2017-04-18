@@ -49,7 +49,7 @@ main,
 body,
 .main-content {
   height: 100%;
-  width: 100%
+  width: 100%;
 }
 
 body {
@@ -58,7 +58,42 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $body-font;
-  margin: 0;
+  margin: 1vh;
+  font-size: 1.7vh;
+}
+
+p {
+  font-size: 2vh;
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 1.3vh;  
+    margin: 0.8vh
+  }
+  p {
+    font-size: 1.6vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 1.1vh;
+    margin: 0.5vh;
+  }
+  p {
+    font-size: 1.4vh;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9vh;  
+    margin: 0.3vh;
+  }
+  p {
+    font-size: 1.2vh;
+  }
 }
 
 * {
