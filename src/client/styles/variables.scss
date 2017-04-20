@@ -8,3 +8,32 @@ $body-font-bold: 'Roboto Medium';
 // font weights
 $regular: 200;
 $bold: 600;
+
+// breakpoints
+$mobileBreakpoint: 768;
+$desktopBreakpoint: 1024;
+
+// mobile + desktop
+@mixin desktop {
+  @media only screen and (min-width: '#{$desktopBreakpoint + 1}px') {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: '#{$mobileBreakpoint}px') {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: '#{$mobileBreakpoint + 1}px') and (max-width: '#{$desktopBreakpoint}px') {
+    @content;
+  }
+}
+
+@mixin tabletAndDesktop {
+  @media only screen and (min-width: '#{$mobileBreakpoint + 1}px') {
+    @content;
+  }
+}

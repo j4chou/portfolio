@@ -40,8 +40,10 @@ class App extends Component {
           <div className="main-content">
             { this.renderMainContent() }
           </div>
-          <Contact />
-          <Footer />
+          <div className='bottom-content'>
+            <Contact />
+            <Footer />
+          </div>
         </main>
       </div>
     );
