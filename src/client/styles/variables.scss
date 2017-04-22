@@ -4,12 +4,15 @@ $contact-font-heading: 'Oswald Light';
 $body-font: 'Roboto Regular';
 $footer-font: 'Roboto Regular';
 $body-font-bold: 'Roboto Medium';
+
 // font weights
 $regular: 200;
 $bold: 600;
+
 // breakpoints
 $mobileBreakpoint: 768;
 $desktopBreakpoint: 1024;
+
 // mobile + desktop
 @mixin desktop {
   @media only screen and (min-width: '#{$desktopBreakpoint + 1}px') {
@@ -40,4 +43,31 @@ $desktopBreakpoint: 1024;
   @media only screen and (min-width: '#{$mobileBreakpoint + 1}px') {
     @content;
   }
+}
+
+// animations
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
 }
