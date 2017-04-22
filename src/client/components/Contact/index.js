@@ -18,8 +18,8 @@ class Contact extends Component {
           </div>
           <div className='contact-right-subhead'>
             <h4>Connect with Me</h4>
+            <Icons />
           </div>
-          <Icons />
         </div>
       </div>
     );

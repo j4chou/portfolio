@@ -26,12 +26,12 @@ class App extends Component {
   }
 
   scrollToBottom = () => {
-    const main = document.getElementById('root');
-    document.body.scrollTop = main.scrollHeight;
+    const rootEl = document.getElementById('root');
+    console.log('root', rootEl.scrollHeight)
+    document.body.scrollTop = rootEl.scrollHeight;
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="App">
         <Home />

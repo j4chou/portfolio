@@ -4,15 +4,12 @@ $contact-font-heading: 'Oswald Light';
 $body-font: 'Roboto Regular';
 $footer-font: 'Roboto Regular';
 $body-font-bold: 'Roboto Medium';
-
 // font weights
 $regular: 200;
 $bold: 600;
-
 // breakpoints
 $mobileBreakpoint: 768;
 $desktopBreakpoint: 1024;
-
 // mobile + desktop
 @mixin desktop {
   @media only screen and (min-width: '#{$desktopBreakpoint + 1}px') {
@@ -22,6 +19,7 @@ $desktopBreakpoint: 1024;
 
 @mixin mobile {
   @media only screen and (max-width: '#{$mobileBreakpoint}px') {
+    font-size: 2.8vmin;
     @content;
   }
 }

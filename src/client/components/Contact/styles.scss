@@ -1,13 +1,13 @@
 @import '../../styles/variables.scss';
-
 .contact-info {
   background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
   height: 100px;
   width: 100%;
   .contact-left {
     float: left;
     height: 100%;
-    width: 30%;
+    width: 26%;
     h3 {
       font-family: $contact-font-heading;
       letter-spacing: 0.3em;
@@ -15,19 +15,19 @@
       text-transform: uppercase;
       top: 50%;
       transform: translateY(-50%);
-    }  
+    }
   }
-
   .contact-right {
-    float: left;
     height: 100%;
-    width: 70%;
+    width: 100%;
     .contact-body {
       float: left;
       height: 100%;
-      width: 60%;
+      margin-left: 11%;
+      width: 50%;
       p {
         font-family: $body-font;
+        font-size: 1em;
         margin-bottom: 0;
         margin-top: 1.5%;
       }
@@ -35,16 +35,17 @@
     .contact-right-subhead {
       float: left;
       height: 100%;
-      width: 27%;
+      width: 35%;
       h4 {
+        float: left;
         font-family: $contact-font-heading;
         letter-spacing: 0.1em;
+        margin-right: 4%;
         position: relative;
         text-transform: uppercase;
         top: 50%;
         transform: translateY(-50%);
       }
-
     }
   }
 }

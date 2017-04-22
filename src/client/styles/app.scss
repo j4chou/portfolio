@@ -1,6 +1,10 @@
 @import './base.scss';
 @import './variables.scss';
 
+#root {
+  height: 838px;
+}
+
 main {
   height: 100%;
   width: 100%;
