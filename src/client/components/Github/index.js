@@ -3,7 +3,8 @@ import './styles.scss';
 
 const Github = () => {
   return (
-    <svg className="github-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
+    <div className="svg-container">
+    <svg className="github-svg" version="1.0"
      width="34px" height="34px" viewBox="0 0 512 512"
      preserveAspectRatio="xMidYMid meet">
       <g transform="translate(0,512) scale(0.1,-0.1)">
@@ -29,6 +30,7 @@ const Github = () => {
       392 940 461 236 51 529 65 755 37z"/>
       </g>
     </svg>
+    </div>
   );
 }
 
