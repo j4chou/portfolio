@@ -47,6 +47,7 @@ body {
   background-size: cover;
   font-family: $body-font;
   font-size: 1em;
+  margin: 0;
   overflow-x: hidden;
   word-wrap: break-word;
   @include mobile {

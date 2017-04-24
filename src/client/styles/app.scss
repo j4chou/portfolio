@@ -12,7 +12,14 @@ main {
 }
 
 .main-content {
-  height: 80vh;
+  height: 82vh;
+}
+
+.content {
+  background: rgba(255,255,255,0.5);
+  height: 100%;
+  margin: 1.5em 0 1.5em 0;
+  width: 100%;
 }
 
 .bottom-content {
