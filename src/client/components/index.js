@@ -14,21 +14,23 @@ class App extends Component {
 
   renderMainContent = () => {
     const pathname = this.props.location.pathname.toLowerCase();
-
+    console.log('browserHsitory', browserHistory);
     switch (pathname) {
       case '/contact':
         this.scrollToBottom();
+        return;
       case '/projects':
         return <Projects />;
+      case '/about':
+        return <About />;
       default:
         return <About />;
     }
   }
 
   scrollToBottom = () => {
-    const rootEl = document.getElementById('root');
-    console.log('root', rootEl.scrollHeight)
-    document.body.scrollTop = rootEl.scrollHeight;
+    var body = document.body;
+    document.body.scrollTop = body.scrollHeight;
   }
 
   render() {
@@ -38,7 +40,7 @@ class App extends Component {
           <Nav />
         <main>
           <div className="main-content">
-            { this.renderMainContent() }
+            {this.renderMainContent()}
           </div>
           <div className='bottom-content'>
             <Contact />

@@ -1,8 +1,6 @@
 {
   "title": "BetterU",
-  "projectUrl": "https://github.com/Better-U/Better-U",
-  "imagePath":  [
-    "/public/assets/projects/betterU/dash.png"
-  ],
+  "url": "https://github.com/Better-U/Better-U",
+  "imagePath": "/assets/projects/betterU/dash.png",
   "summary": "A fitness web application that enables users to easily manage their fitness and nutritional information without jeopardizing socialization."
 }

@@ -1,0 +1,11 @@
+.content {
+  overflow: scroll;
+}
+
+.project-list {
+  height: 25%;
+  width: 100%;
+  & .project-img {
+    width: 30%;
+  }
+}

@@ -1,16 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { projectList } from './../../utils/projectData.js';
 
-console.log('projectList', projectList);
+import './styles.scss';
 
-class Projects extends Component {
-  render() {
-    return (
-      <div className="content">
-      Projects here
-      </div>
-    );
-  }
+const Projects = () =>  {
+  return (
+    <div className="content">
+      {
+        projectList.map(project => {
+          return (
+            <div className="project-list" key={project.title}>
+              <a href={project.url} key={project.title}>
+                <img src={project.imagePath} alt={project.title} className="project-img" />
+              </a>
+              <div className="project-description">
+                <h4>{project.title}</h4>
+                <p>{project.summary}</p>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  );
 }
 
 export default Projects;
