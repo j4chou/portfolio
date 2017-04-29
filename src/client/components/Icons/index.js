@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 import Github from './../Github/index';
 import Linkedin from './../Linkedin/index';
 import './styles.scss';
@@ -25,12 +24,11 @@ const Icons = () => {
       <ul>
       {
         links.map( link => {
-          let linkClass = 'media-nav-link';
           const IconComponent = IconComponents[link.name];
           return (
-            <Link to={link.path} key={link.name} className={link.name}>
+            <a href={link.path} key={link.name} className={link.name}>
               <IconComponent />
-            </Link>
+            </a>
           );
         })
       }
