@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { projectList } from './../../utils/projectData.js';
+
+console.log('projectList', projectList);
 
 class Projects extends Component {
   render() {

@@ -1,0 +1,8 @@
+{
+  "title": "Open2",
+  "projectUrl": "http://dry-retreat-53865.herokuapp.com/",
+  "imagePath": [
+    "/public/assets/projects/open2/home.png"
+  ],
+  "summary": "A single page social web application designed for friends to schedule spontaneous outings."
+}
