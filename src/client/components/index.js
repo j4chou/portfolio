@@ -10,15 +10,34 @@ import Nav from './Nav/index';
 import './../styles/base.scss';
 import './../styles/app.scss';
 
+const history = [];
+
+const getPreviousLocation = (arr) => {
+  var lastPath = arr[arr.length-2];
+  switch (lastPath) {
+    case '/':
+    case '/about':
+      return <About />;
+    case '/projects':
+      return <Projects />;
+  }
+}
+
 class App extends Component {
+
+  scrollToBottom = () => {
+    var body = document.body;
+    document.body.scrollTop = body.scrollHeight;
+  }
 
   renderMainContent = () => {
     const pathname = this.props.location.pathname.toLowerCase();
-    console.log('browserHsitory', browserHistory);
+    history.push(pathname);
+
     switch (pathname) {
       case '/contact':
         this.scrollToBottom();
-        return;
+        return getPreviousLocation(history);
       case '/projects':
         return <Projects />;
       case '/about':
@@ -26,11 +45,6 @@ class App extends Component {
       default:
         return <About />;
     }
-  }
-
-  scrollToBottom = () => {
-    var body = document.body;
-    document.body.scrollTop = body.scrollHeight;
   }
 
   render() {
