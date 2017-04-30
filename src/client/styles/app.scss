@@ -8,19 +8,19 @@ main {
 }
 
 .main-content {
-  height: 82vh;
+  height: 100%;
 }
 
 .content {
   // background: rgba(255,255,255,0.5);
-  border: 1px solid black;
   height: 100%;
-  margin: 1.5em 0 1.5em 0;
+  margin: 1.5em 0 0 0;
   width: 100%;
 }
 
 .bottom-content {
   bottom: 0;
-  position: absolute;
+  margin-top: 1.5em;
+  position: relative;
   width: 100%;
 }

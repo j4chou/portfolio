@@ -30,6 +30,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('./fonts/OpenSans-Semibold.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('./fonts/OpenSans-Regular.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('./fonts/OpenSans-Light.ttf');
+  font-style: normal;
+}
+
+
+
 html {
   height: 100%;
   width: 100%;
@@ -76,10 +96,6 @@ h4 {
   margin: 0;
 }
 
-h5 {
-  font-size: 1.7em;
-  margin: 0;
-}
 
 * {
   box-sizing: border-box;

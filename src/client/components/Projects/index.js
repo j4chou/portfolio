@@ -14,8 +14,11 @@ const Projects = () =>  {
                 <img src={project.imagePath} alt={project.title} className="project-img" />
               </a>
               <div className="project-description">
-                <h4>{project.title}</h4>
-                <p>{project.summary}</p>
+                <div className="description-text">
+                  <h4>{project.title}</h4>
+                  <p>{project.summary}</p>
+                  <p>{project.tech}</p>
+                </div>
               </div>
             </div>
           );

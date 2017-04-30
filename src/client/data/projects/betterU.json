@@ -2,5 +2,6 @@
   "title": "BetterU",
   "url": "https://github.com/Better-U/Better-U",
   "imagePath": "/assets/projects/betterU/dash.png",
-  "summary": "A fitness web application that enables users to easily manage their fitness and nutritional information without jeopardizing socialization."
+  "summary": "A fitness web application that enables users to easily manage their fitness and nutritional information without jeopardizing socialization.",
+  "tech": "Technologies used: Node, Express, MySQL, Knex.js, AngularJS, Chartist, Protractor, Nutritionix API."
 }

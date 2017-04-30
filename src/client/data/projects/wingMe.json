@@ -2,5 +2,6 @@
   "title": "WingMe",
   "url": "https://github.com/wingme-app/wingme-app",
   "imagePath": "/assets/projects/wingMe/all.png",
-  "summary": "A social mobile application that allows users to choose friends and find other pairs for double-dates."
+  "summary": "A social mobile application that allows users to choose friends and find other pairs for double-dates.",
+  "tech": "Technologies used: Node, Express, SQLite3, Knex.js, AngularJS, Ionic."
 }
