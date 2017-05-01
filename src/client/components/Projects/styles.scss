@@ -20,7 +20,6 @@
   & .project-description {
     height: 100%;
     text-align: center;
-    letter-spacing: 0.1rem;
   }
   & .description-text {
     float: left;
@@ -31,6 +30,7 @@
   }
   & h4 {
     color: black;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     top: 16%;
     position: relative;
@@ -39,6 +39,7 @@
     font-family: $description-font;
     color: rgba(0,0,0, 0.6);
     font-size: 1.2em;
+    letter-spacing: 0.1rem;
     top: 25%;
     position: relative;
   }
