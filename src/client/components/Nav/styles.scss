@@ -3,7 +3,7 @@
 // from animate.css library
 @include keyframes (flipInX) {
     from {
-      background-color: rgba(128, 179, 204, 0.7);
+      background-color: rgba(128, 179, 204, 0.6);
       -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
       transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
       -webkit-animation-timing-function: ease-in;
@@ -11,7 +11,7 @@
     }
 
     40% {
-      background-color: rgba(128, 179, 204, 0.6);
+      background-color: rgba(128, 179, 204, 0.5);
       -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
       transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
       -webkit-animation-timing-function: ease-in;
@@ -19,13 +19,13 @@
     }
 
     60% {
-      background-color: rgba(128, 179, 204, 0.5);
+      background-color: rgba(128, 179, 204, 0.4);
       -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
       transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     }
 
     80% {
-      background-color: rgba(128, 179, 204, 0.4);
+      background-color: rgba(128, 179, 204, 0.33);
       -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
       transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
     }
@@ -37,7 +37,7 @@
   }
 
 .navigation {
-  animation: flipInX 2.5s;
+  animation: flipInX 2s;
   background-color: rgba(128, 179, 204, 0.27);
   height: 28px;
   width: 100%;
