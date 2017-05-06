@@ -1,0 +1,15 @@
+.content.about {
+  float: left;
+  padding: 3em 6em;
+  .picture {
+    float: left;
+    background-color: black;
+    height: 300px;
+    margin: 0 2em 2em 0;
+    width: 300px;
+  }
+  .about-me p {
+    font-size: 2.3vh;
+  }
+}
+
