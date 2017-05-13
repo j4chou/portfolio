@@ -11,12 +11,18 @@ class About extends Component {
         <div className="picture">
         </div>
         <div className="about-me">
-          <p>Maybe I can list interesting facts about myself and 
-          talk about my journey to becoming a web developer.
-          Love the challenges of development.
-          Talk about hobbies/activities.
-          Goals.
-          </p>
+          <ul>
+            <li>Graduate of UC San Diego Class of 2015</li>
+            <li>Motivated web developer who is always trying to learn more</li>
+            <li>Some activities I do for fun:
+                <ul>
+                  <li>Looking for top-rated books to read (and reading them)</li>
+                  <li>Trying recipes with a reasonable amount of ingredients</li>
+                  <li>Rewatching Studio Ghibli films</li>
+                  <li>Searching for what's hot on Yelp to plan food adventures</li>
+                </ul>
+            </li>
+          </ul>
         </div>
       </div>
     );
