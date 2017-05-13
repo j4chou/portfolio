@@ -38,7 +38,6 @@
 
 .navigation {
   animation: flipInX 2s;
-  background-color: rgba(128, 179, 204, 0.27);
   height: 28px;
   width: 100%;
 }
@@ -65,7 +64,9 @@
 }
 
 .nav-link:hover {
-  background-color: rgba(128, 179, 204, 0.33);
+  > a {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .nav-link-active {
