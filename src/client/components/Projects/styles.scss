@@ -1,14 +1,4 @@
 @import '../../styles/variables.scss';
-.content {
-  padding: 1em 0.5em;
-}
-
-.project-list:last-child::after {
-  content: " ";
-  float: left;
-  height: 6vh;
-  width: 100%;
-}
 
 .project-list:first-child {
   -webkit-box-shadow: inset 0px 6px 10px -4px rgba(0, 0, 0, 0.3), 0px 6px 14px -2px rgba(0, 0, 0, 0.5);
@@ -76,6 +66,13 @@
   & .project-description {
     background: rgba(172, 194, 204, 0.4);
   }
+}
+
+.project-list:last-child::after {
+  content: " ";
+  float: left;
+  height: 6vh;
+  width: 100%;
 }
 
 // from animate.css library
