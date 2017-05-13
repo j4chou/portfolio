@@ -1,11 +1,26 @@
 .content.about {
   float: left;
   padding: 3em 6em;
+  h1 {
+    color: white;
+    font-size: 4.5vh;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 100%;
+  }
+  h1::after {
+    background-color: rgba(255, 255, 255, 1);
+    content: '';
+    display: block;
+    height: 0.1rem;
+    margin-top: 0.4em;
+    width: 5rem;
+  }
   .picture {
     float: left;
     background-color: black;
     height: 300px;
-    margin: 0 2em 2em 0;
+    margin: 0 4em 4em 0;
     width: 300px;
   }
   .about-me p {

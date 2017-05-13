@@ -7,10 +7,16 @@ class About extends Component {
   render() {
     return (
       <div className="about content">
+        <h1>Get to know me</h1>
         <div className="picture">
         </div>
         <div className="about-me">
-          <p>About</p>
+          <p>Maybe I can list interesting facts about myself and 
+          talk about my journey to becoming a web developer.
+          Love the challenges of development.
+          Talk about hobbies/activities.
+          Goals.
+          </p>
         </div>
       </div>
     );
