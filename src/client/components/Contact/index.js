@@ -17,7 +17,7 @@ class Contact extends Component {
             <p>Say hi @ j4chou@gmail.com!</p>
           </div>
           <div className='contact-right-subhead'>
-            <h4>Connect with Me</h4>
+            <h5>Connect with Me</h5>
             <Icons />
           </div>
         </div>
