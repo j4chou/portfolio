@@ -1,43 +1,6 @@
 @import '../../styles/variables.scss';
 
-// from animate.css library
-@include keyframes (flipInX) {
-    from {
-      background-color: rgba(128, 179, 204, 0.6);
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-    }
-
-    40% {
-      background-color: rgba(128, 179, 204, 0.5);
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-      -webkit-animation-timing-function: ease-in;
-      animation-timing-function: ease-in;
-    }
-
-    60% {
-      background-color: rgba(128, 179, 204, 0.4);
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    }
-
-    80% {
-      background-color: rgba(128, 179, 204, 0.33);
-      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    }
-
-    to {
-      -webkit-transform: perspective(400px);
-      transform: perspective(400px);
-    }
-  }
-
 .navigation {
-  animation: flipInX 2s;
   height: 28px;
   width: 100%;
 }
@@ -65,7 +28,7 @@
 
 .nav-link:hover {
   > a {
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
   }
 }
 
