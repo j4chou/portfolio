@@ -12,16 +12,19 @@ class About extends Component {
         </div>
         <div className="about-me">
           <ul>
+            <li>Born and raised in Los Angeles, CA</li>
             <li>Graduate of UC San Diego Class of 2015</li>
-            <li>Motivated web developer who is always trying to learn more</li>
+            <li>Motivated web developer with a love of challenges</li>
             <li>Some activities I do for fun:
                 <ul>
-                  <li>Looking for top-rated books to read (and reading them)</li>
-                  <li>Trying recipes with a reasonable amount of ingredients</li>
+                  <li>Searching for top-rated books to read (and reading them)</li>
+                  <li>Cooking recipes with a reasonable list of ingredients</li>
                   <li>Rewatching Studio Ghibli films</li>
-                  <li>Searching for what's hot on Yelp to plan food adventures</li>
+                  <li>Rock climbing</li>
+                  <li>Planning food adventures with friends & family</li>
                 </ul>
             </li>
+            <li>My official typing speed is >100 WPM with 99% accuracy</li>
           </ul>
         </div>
       </div>
