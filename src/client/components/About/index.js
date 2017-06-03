@@ -9,6 +9,7 @@ class About extends Component {
       <div className="about content">
         <h1>Get to know me</h1>
         <div className="picture">
+          <img src="/assets/me.jpg" />
         </div>
         <div className="about-me">
           <ul>
@@ -24,7 +25,7 @@ class About extends Component {
                   <li>Planning food adventures with friends & family</li>
                 </ul>
             </li>
-            <li>My official typing speed is >100 WPM with 99% accuracy</li>
+            <li>I have a certified typing speed of 101 WPM with 100% accuracy (5 minute test)</li>
           </ul>
         </div>
       </div>

@@ -17,11 +17,13 @@
     width: 5rem;
   }
   .picture {
-    background-color: black;
     float: left;
-    height: 300px;
     margin: 0 1em 4em 0;
-    width: 300px;
+    img {
+      border: 1px solid black;
+      height: 647px;
+      width: 431px;
+    }
   }
   .about-me {
     float: left;
