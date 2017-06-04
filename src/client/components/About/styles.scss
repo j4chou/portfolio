@@ -1,12 +1,16 @@
+@import '../../styles/variables.scss';
+
 .content.about {
   float: left;
   padding: 1em 6em;
-  h1 {
+  h1, h2 {
     color: white;
-    font-size: 5vh;
     letter-spacing: 0.2em;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
     text-transform: uppercase;
+  }
+  h1 {
+    font-size: 5vh;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   }
   h1::after {
     background-color: white;
@@ -16,9 +20,15 @@
     margin-top: 0.4em;
     width: 5rem;
   }
+  h2 {
+    font-size: 3.3vh;
+    text-shadow: 3px 2px 0px rgba(0, 0, 0, 0.25);
+  }
+  h2:first-child {
+    margin-top: 0;
+  }
   .picture {
     float: left;
-    margin: 0 1em 4em 0;
     img {
       border: 1px solid black;
       height: 647px;
@@ -27,13 +37,15 @@
   }
   .about-me {
     float: left;
+    margin-left: 4em;
     li {
       color: rgba(0, 0, 0, 0.6);
-      font-size: 2.6vh;
+      font-family: $body-font;
+      font-size: 2vh;
     }
     ul:nth-child(1) {
       li {
-        margin-left: 1.5em;
+        margin: 0.17em 0 0.17em 1.5em;
       }
     }
   }
