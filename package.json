@@ -72,7 +72,7 @@
   "bugs": {
     "url": "https://github.com/j4chou/portfolio/issues"
   },
-  "homepage": "http://jessicachou.pro/",
+  "homepage": "https://j4chou.github.io/portfolio",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
