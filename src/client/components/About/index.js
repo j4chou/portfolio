@@ -9,7 +9,7 @@ class About extends Component {
       <div className="about content">
         <h1>Get to know me</h1>
         <div className="picture">
-          <img src="/portfolio/assets/me.jpg" />
+          <img src="/assets/me.jpg" />
         </div>
         <div className="about-me">
           <ul>
