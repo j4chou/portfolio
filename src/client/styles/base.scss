@@ -1,12 +1,6 @@
 @import './variables.scss';
 
 @font-face {
-  font-family: 'Work Sans';
-  src: url('./fonts/WorkSans-Regular.ttf');
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Oswald Light';
   src: url('./fonts/Oswald-Light.ttf');
   font-style: normal;
@@ -41,14 +35,6 @@
   src: url('./fonts/OpenSans-Regular.ttf');
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'Open Sans Light';
-  src: url('./fonts/OpenSans-Light.ttf');
-  font-style: normal;
-}
-
-
 
 html {
   height: 100%;

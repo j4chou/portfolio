@@ -34,6 +34,7 @@
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.10.0",
     "fs-extra": "0.30.0",
+    "gh-pages": "^1.0.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
     "jest": "18.1.0",
@@ -46,7 +47,7 @@
     "sass-loader": "^6.0.3",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.14.0",
+    "webpack": "^2.0.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.2"
@@ -56,7 +57,9 @@
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
@@ -69,7 +72,7 @@
   "bugs": {
     "url": "https://github.com/j4chou/portfolio/issues"
   },
-  "homepage": "http://localhost",
+  "homepage": "https://j4chou.github.io/portfolio",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
