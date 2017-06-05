@@ -24,13 +24,31 @@ $desktopBreakpoint: 1024;
 
 @mixin mobile {
   @media only screen and (max-width: '#{$mobileBreakpoint}px') {
+    font-size: 2.8vmin;
+    // about page
+    .content.about h1 {
+      display: none;
+    }
+    .content.about h2 {
+      font-size: 2.3vh;
+    }
+    .content.about .picture img {
+      display: none;
+    }
+    .content.about .about-me {
+      margin-left: 0;
+      width: 100%;
+    }
+    .content.about .about-me ul:first-child li:last-child {
+      margin-bottom: 0;
+    }
+    // project page
     .svg-container .github-svg {
       padding: 3%;
     }
     .svg-container svg {
       width: 25%;
     }
-    font-size: 2.8vmin;
     .project-list {
       height: 150px;
       & img.project-img {
@@ -47,13 +65,29 @@ $desktopBreakpoint: 1024;
 
 @mixin tablet {
   @media only screen and (min-width: '#{$mobileBreakpoint + 1}px') and (max-width: '#{$desktopBreakpoint}px') {
+    font-size: 2.8vmin;
+    // about page
+    .content.about h2 {
+      font-size: 2.3vh;
+    }
+    .content.about .picture img {
+      height: 420px;
+      width: 286px;
+    }
+    .content.about .about-me {
+      margin-left: 1.5em;
+      width: 45%;
+    }
+    .content.about .about-me ul:first-child li:last-child {
+      margin-bottom: 0;
+    }
+    // contact
     .svg-container .github-svg {
       padding: 3%;
     }
     .svg-container svg {
       width: 25%;
     }
-    font-size: 2.8vmin;
     .project-list {
       height: 150px;
       & img.project-img {
