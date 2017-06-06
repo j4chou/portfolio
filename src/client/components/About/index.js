@@ -19,17 +19,17 @@ class About extends Component {
               <li>My parents immigrated from Vietnam and Taiwan</li>
               <li>Graduate of UC San Diego Class of 2015</li>
               <li>Passionate JavaScript developer who loves a challenge</li>
-              <li>I enjoy ingesting copious amounts of caffeine via tea and coffee</li>
+              <li>Huge tea and coffee addict</li>
               </ul>
             <h2>What are my hobbies?</h2>
               <ul>
-                <li>Searching for top-rated books to read - and reading them</li>
-                <li>Cooking recipes with a reasonable list of ingredients</li>
-                <li>Playing different types of games (console, board, card, etc.)</li>
+                <li>Searching for top-rated books to read</li>
                 <li>Rock climbing at a gym</li>
-                <li>Expanding my knowledge, whether it be learning new technologies or other topics like investing</li>
+                <li>Playing different types of games (console, board, card, etc.)</li>
+                <li>Expanding my knowledge, whether it be learning new technologies or about other topics like investing</li>
+                <li>Cooking recipes with a reasonable list of ingredients</li>
               </ul>
-            <h2>Interesting Facts</h2>
+            <h2>Fun Facts</h2>
               <ul>
                 <li>I <i>love</i> all-you-can-eat Korean barbecue/sushi/hotpot restaurants, and buffets</li>
                 <li>I was present at a local restaurant when it got robbed at gunpoint</li>
