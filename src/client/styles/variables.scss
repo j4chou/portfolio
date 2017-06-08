@@ -25,6 +25,9 @@ $desktopBreakpoint: 1024;
 @mixin mobile {
   @media only screen and (max-width: '#{$mobileBreakpoint}px') {
     font-size: 2.8vmin;
+    h3, h5 {
+      font-size: 1em;
+    }
     // about page
     .content.about h1 {
       display: none;
@@ -50,13 +53,25 @@ $desktopBreakpoint: 1024;
       width: 25%;
     }
     .project-list {
-      height: 150px;
+      height: 202px;
+      p {
+        letter-spacing: 0;
+        font-size: 1em;
+        margin: 0;
+      }
       & img.project-img {
         width: 277px;
         height: 100%;
       }
       & .project-description {
         font-size: 0.6em;
+      }
+      & .description-text {
+        padding: 0;
+        width: 40%;
+        h4 {
+          font-size: 1.5em;
+        }
       }
     }
     @content;
