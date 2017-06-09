@@ -59,6 +59,15 @@ body {
   @include mobile {
     text-size-adjust: none;
   }
+  @include tablet {
+    text-size-adjust: none;
+  }
+  @include smallDesktop {
+    text-size-adjust: none;
+  }
+  @include largeDesktop {
+    text-size-adjust: none;
+  }
 }
 
 p {

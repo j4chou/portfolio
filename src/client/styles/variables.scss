@@ -14,26 +14,19 @@ $bold: 600;
 // breakpoints
 $mobileBreakpoint: 768;
 $desktopBreakpoint: 1024;
+$medDesktopBreakpoint: 1135;
 
 // mobile + desktop
-@mixin desktop {
-  @media only screen and (max-width: '#{$desktopBreakpoint + 1}px') {
-    @content;
-  }
-}
-
 @mixin mobile {
   @media only screen and (max-width: '#{$mobileBreakpoint}px') {
-    font-size: 2.8vmin;
     h3, h5 {
-      font-size: 1em;
+      font-size: 1.3em;
     }
     // about page
-    .content.about h1 {
-      display: none;
-    }
-    .content.about h2 {
+    .content.about {
+      h1,h2 {
       font-size: 2.3vh;
+      }
     }
     .content.about .picture img {
       display: none;
@@ -44,6 +37,10 @@ $desktopBreakpoint: 1024;
     }
     .content.about .about-me ul:first-child li:last-child {
       margin-bottom: 0;
+    }
+    // contact
+    .contact-info .contact-right .contact-body p {
+      font-size: 1.7vh;
     }
     // project page
     .svg-container .github-svg {
@@ -80,6 +77,9 @@ $desktopBreakpoint: 1024;
 
 @mixin tablet {
   @media only screen and (min-width: '#{$mobileBreakpoint + 1}px') and (max-width: '#{$desktopBreakpoint}px') {
+    h3, h5 {
+      font-size: 1em;
+    }
     font-size: 2.8vmin;
     // about page
     .content.about h2 {
@@ -117,8 +117,35 @@ $desktopBreakpoint: 1024;
   }
 }
 
-@mixin tabletAndDesktop {
-  @media only screen and (min-width: '#{$mobileBreakpoint + 1}px') {
+@mixin smallDesktop {
+  @media only screen and (min-width: '#{$mobileBreakpoint}px') and (max-width: '#{$desktopBreakpoint}px') {
+    .content.about {
+      .about-me {
+        margin-left: 1em;
+      }
+      .picture img {
+      height: 375px;
+      width: 250px;
+     }
+   }
+    @content;
+  }
+}
+
+@mixin largeDesktop {
+  @media only screen and (min-width: '#{$desktopBreakpoint}px') and (max-width: '#{$medDesktopBreakpoint}px') {
+    .content.about {
+      .about-me {
+        margin-left: 1em;
+      }
+      .picture img {
+      height: 525px;
+      width: 350px;
+     }
+   }
+   .contact-info h3, h5 {
+    font-size: 1.8em;
+   }
     @content;
   }
 }
