@@ -65,6 +65,9 @@ body {
   @include smallDesktop {
     text-size-adjust: none;
   }
+  @include medDesktop {
+    text-size-adjust: none;
+  }
   @include largeDesktop {
     text-size-adjust: none;
   }
