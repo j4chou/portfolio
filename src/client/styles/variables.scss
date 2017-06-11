@@ -24,10 +24,10 @@ $largeDesktopBreakpoint: 1207;
     }
     // about page
     .content.about {
-      h1,
-      h2 {
+      h1, h2 {
         font-size: 2.3vh;
       }
+      padding: 1em 3em;
     }
     .content.about .picture img {
       display: none;
@@ -79,6 +79,7 @@ $largeDesktopBreakpoint: 1207;
     }
     // about page
     .content.about {
+      padding: 1em 4em;
       h1,
       h2 {
         font-size: 2.3vh;
