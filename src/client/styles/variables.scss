@@ -10,13 +10,39 @@ $description-font: 'Open Sans Regular';
 $regular: 200;
 $bold: 600;
 // breakpoints
+$smallMobileBreakpoint: 463;
 $mobileBreakpoint: 768;
 $desktopBreakpoint: 1024;
 $medDesktopBreakpoint: 1135;
 $largeDesktopBreakpoint: 1207;
 // mobile + desktop
+// mobile + desktop
+@mixin smallMobile {
+  @media only screen and (max-width: '#{$smallMobileBreakpoint}px') {
+    // project page
+    .project-list {
+      height: 150px;
+      p {
+        letter-spacing: 0;
+        font-size: 1.5vh;
+        margin: 0;
+      }
+      & img.project-img {
+        width: 206px;
+        height: 100%;
+      }
+      & .description-text {
+        h4 {
+          font-size: 2vh;
+        }
+      }
+    }
+    @content;
+  }
+}
+
 @mixin mobile {
-  @media only screen and (max-width: '#{$mobileBreakpoint}px') {
+  @media only screen and (min-width: '#{$smallMobileBreakpoint + 1}px') and (max-width: '#{$mobileBreakpoint}px') {
     h3,
     h5 {
       font-size: 1.3em;
@@ -53,7 +79,7 @@ $largeDesktopBreakpoint: 1207;
       height: 202px;
       p {
         letter-spacing: 0;
-        font-size: 1.3vh;
+        font-size: 1.5vh;
         margin: 0;
       }
       & img.project-img {
@@ -62,7 +88,7 @@ $largeDesktopBreakpoint: 1207;
       }
       & .description-text {
         h4 {
-          font-size: 1.5vh;
+          font-size: 2vh;
         }
       }
     }

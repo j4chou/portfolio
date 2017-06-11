@@ -56,6 +56,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   word-wrap: break-word;
+  @include smallMobile {
+    text-size-adjust: none;
+  }
   @include mobile {
     text-size-adjust: none;
   }
