@@ -19,12 +19,42 @@ $largeDesktopBreakpoint: 1207;
 // mobile + desktop
 @mixin smallMobile {
   @media only screen and (max-width: '#{$smallMobileBreakpoint}px') {
+    h3, h5 {
+      font-size: 1.3em;
+    }
+    // about page
+    .content.about {
+      h1,
+      h2 {
+        font-size: 2.3vh;
+      }
+    }
+    .content.about .picture img {
+      display: none;
+    }
+    .content.about .about-me {
+      margin-left: 0;
+      width: 100%;
+    }
+    .content.about .about-me ul:first-child li:last-child {
+      margin-bottom: 0;
+    }
+    // contact
+    .contact-info .contact-right .contact-body p {
+      font-size: 1.7vh;
+    }
+    .svg-container .github-svg {
+      padding: 3%;
+    }
+    .svg-container svg {
+      width: 25%;
+    }
     // project page
     .project-list {
       height: 150px;
       p {
         letter-spacing: 0;
-        font-size: 1.5vh;
+        font-size: 1.3vh;
         margin: 0;
       }
       & img.project-img {
@@ -32,6 +62,7 @@ $largeDesktopBreakpoint: 1207;
         height: 100%;
       }
       & .description-text {
+        width: 45%;
         h4 {
           font-size: 2vh;
         }
@@ -43,8 +74,7 @@ $largeDesktopBreakpoint: 1207;
 
 @mixin mobile {
   @media only screen and (min-width: '#{$smallMobileBreakpoint + 1}px') and (max-width: '#{$mobileBreakpoint}px') {
-    h3,
-    h5 {
+    h3, h5 {
       font-size: 1.3em;
     }
     // about page
